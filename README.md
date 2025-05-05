@@ -1,2 +1,0 @@
-# project-IP
-individual project
