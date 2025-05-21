@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="css/core.css">    
+</head>
+<body>
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">individual project Удалого Павла</span> 
+            <nav>
+                <ul>
+                    <li class="button open-btn"><a href="#">О Нас</a></li>
+                    <li class="button open-btn0"><a href="#">Сервисы</a></li>
+                    <li class="button open-btn2"><a href="#">Блог</a></li>
+                    <li class="btn"><a href="page.html">Вход/Регистрация</a></li>
+                </ul>
+            </nav>
+        </header>
+    <div class="hero container">
+        <div class="hero--info">
+            <h1>Продукт индивидуального проекта</h1>
+            <p>Этот сайт — демонстрация простейших возможностей HTML и CSS. Здесь вы увидите, как с помощью базовых тегов HTML создаются заголовки, абзацы, списки и ссылки, а CSS добавляет стили: меняет цвета, шрифты и расположение элементов. Ничего сложного — только основы верстки и оформления! Также на сайте присутсвтвует основная информация о МБОУ СОШ №8.</p>
+            <a href ="Project IP.docx"><button class="btn">Кликни сюда</button></a>
+            <igra>
+                <p>Угадайте число от 1 до 100.</p>
+                <input type="number" id="guess" placeholder="Введите число" />
+                <buttom class="btn" onclick="checkGuess()">Проверить</buttom>
+                <p id="result"></p>
+            
+                <script>
+                    const numberToGuess = Math.floor(Math.random() * 100) + 1;
+                    function checkGuess() {
+                        const guess = parseInt(document.getElementById('guess').value);
+                        const result = document.getElementById('result');
+                        
+                        if (guess < numberToGuess) {
+                            result.textContent = 'Слишком маленькое!';
+                        } else if (guess > numberToGuess) {
+                            result.textContent = 'Слишком большое!';
+                        } else {
+                            result.textContent = 'Поздравляем, вы угадали!';
+                        }
+                    }
+                </script></igra>
+                
+        </div>
+        <img src="img/image.svg" alt="">
+    </div>
+    </div>
+    <div class="features">
+        <div class="container">
+        </div>
+    </div>
+    </div>
+<div class="popup">
+    <div class="popup-block">
+        <div class="popup-close">&#10006</div>
+        <h2>Полное наименование:</h2>
+        <p>Муниципальное бюджетное общеобразовательное учреждение "Средняя общеобразовательная школа №8 имени Героя Советского Союза, лётчика-космонавта СССР В.М. Афанасьева" г. Брянска</p>
+        <h2>Сокращенное наименование:</h2>
+        <p>МБОУ СОШ №8 им. Героя Советского Союза, лётчика-космонавта СССР В.М. Афанасьева г. Брянска</p>
+        <h2>Дата создания: </h2>
+        <p>1964 год</p> 
+    </div>
+</div>
+<div class="popup0">
+    <div class="popup-block0">
+        <div class="popup-close0">&#10006</div>
+        <h2>Основные службы и сервисы находятся на официальном сайте Школа №8 города Брянска по ссылке:</h2>
+        <p class="button"><a href="https://sh8-bryansk-r15.gosweb.gosuslugi.ru/roditelyam-i-uchenikam/uslugi-i-servisy/">https://sh8-bryansk-r15.gosweb.gosuslugi.ru/roditelyam-i-uchenikam/uslugi-i-servisy/</a></p>
+    </div>
+</div>
+<div class="popup2">
+    <div class="popup-block2">
+        <div class="popup-close2">&#10006</div>
+        <h2>Блог МБОУ СОШ №8 во ВКонтакте</h2>
+        <p class="button"><a href="https://vk.com/school_8_bryansk?from=search">https://vk.com/school_8_bryansk?from=search </a></p>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
